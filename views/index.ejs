@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  <div class="d-flex flex-column bd-highlight mb-3">
+    <div class="p-2 bd-highlight">
+      <header>
+        <a href="/">
+          <img src="/images/logo.png" width="30" height="30" alt="logo">Property Listing
+        </a>
+      </header>
+    </div>
+    <div class="p-2 bd-highlight">
+      <div class="container">
+        <h1><%= title %></h1>
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="/">Property</a></li>
+          <li><a href="/listinglist">Property Lists</a></li>
+          <li><a href="/document">Documentation</a></li>
+        </ul>
+        <br/>
+            
+        <div class="row">
+        <div class="col-md-6">
+        <form method="post" id="submitForm">
+                      
+        <div class="form-group">
+        <label for="propertyName">Property Name : </label>
+        <input type="text" required class="form-control" name="propertyName" id="propertyName" placeholder="Please enter property name">
+        </div>
+            
+        <div class="form-group">
+        <label for="propertyType">Property Type :</label>
+        <select name="propertyType" id="propertyType">
+          <option value="condo">condo</option>
+          <option value="apartment">apartment</option>
+          <option value="house">house</option>
+        </select>
+        </div>
+                      
+        <div class="form-group">
+          <label for="address">Address : </label>
+          <input type="text" required class="form-control" name="address" id="address" placeholder="Please enter address">
+        </div>
+            
+        <div class="form-group">
+          <label for="city">City : </label>
+          <input type="text" required class="form-control" name="city" id="city" placeholder="Please enter city">
+        </div>
+            
+        <div class="form-group">
+          <label for="price">Price : </label>
+          <input type="text" required class="form-control" name="price" id="price" placeholder="Please enter price">
+        </div>
+            
+        <div class="form-group">
+          <input type="checkbox" name="allowed" id="allowed" value="Rental Allowed" checked><label for="allowed"> Rental Allowed</label>
+        </div>
+            
+        <div class="form-group">
+          <textarea rows="4" cols="50" name="description" id="description" placeholder="Comment"></textarea>
+        </div>
+    
+        <button type="submit" class="btn btn-success">Submit</button>
+        <input class="btn btn-success" type="reset" value="Reset" id="reset">
+
+        <div class="form-group margin-bottom-10">
+        </div>
+
+        <div id="statusMsg">
+        </div>
+
+        </form>         
+        </div>       
+        </div> 
+      </div>
+    </div>
+    <div class="p-2 bd-highlight">
+      <footer>&copy; 2019 Alisa Thaion All Rights Reserved</footer>
+    </div>
+  </div>
+
+  
+
+
+  </body>
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="/javascripts/index.js"></script>
+</html>

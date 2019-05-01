@@ -1,0 +1,13 @@
+<a href="/">
+          <img src="/images/logo.png" width="30" height="30" alt="logo">Property Listing
+</a>
+
+
+<ul class="nav nav-pills">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/listinglist">Document</a>
+          </li>
+</ul>

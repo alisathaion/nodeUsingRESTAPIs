@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= title %></title>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+<div class="d-flex flex-column bd-highlight mb-3">
+  <div class="p-2 bd-highlight">
+    <header>
+      <a href="/">
+        <img src="/images/logo.png" width="30" height="30" alt="logo">Property Listing
+      </a>
+    </header>
+  </div>
+
+  <div class="p-2 bd-highlight" style="height: 85vh;">
+    <div class="container">
+      <h1><%= title %></h1>
+      <ul class="nav nav-tabs">
+      <li><a href="/">Listing</a></li>
+      <li class="active"><a href="/listinglist">Listing Lists</a></li>
+      <li><a href="/document">Documentation</a></li>
+      </ul>
+      <br />
+      <!-- Search form -->
+      <input class="form-control" type="search" placeholder="Search By City or Property type" id="search">
+      <br />
+      
+      <div class="w-100">
+        <table class="table table-striped table-bordered table-hover table-condensed" id="listingList">
+        <tr>
+          <th>Property Name</th>
+          <th>Property Type</th> 
+          <th>Address</th>
+          <th>City</th>
+          <th>Price</th> 
+          <th>Rental Allowed</th>
+          <th>Description</th>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-2 bd-highlight">
+    <footer>&copy; 2019 Alisa Thaion All Rights Reserved</footer>
+  </div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="javascripts/listinglists.js"></script>
+</html>
